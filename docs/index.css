@@ -82,22 +82,17 @@ body {
   color: white;
 }
 
-.header-navbar ul li:nth-child(4) {
+.header-navbar ul li:nth-child(4) a {
   background-color: white;
+  color: black;
   border-radius: 25px;
   padding: 12px;
-  width: 100px;
-  text-transform: uppercase;
-}
 
-.header-navbar ul li:nth-child(4) a {
-  color: black;
+  text-transform: uppercase;
 }
 
 .header-navbar ul li:nth-child(4) a:hover {
   color: white;
-}
-.header-navbar ul li:nth-child(4):hover {
   background-color: var(--Darkdesaturatedcyan);
 }
 
@@ -333,7 +328,26 @@ footer ul li a:hover {
 
 @media (max-width: 900px) {
   .header-navbar ul {
+    position: absolute;
+    top: 90px;
+    right: 45px;
+    height: 300px;
+    width: 300px;
+    background-color: white;
     display: none;
+  }
+  .header-navbar ul li {
+    display: flex;
+    padding: 20px 0;
+    justify-content: center;
+  }
+
+  .header-navbar ul li:nth-child(4) a {
+    background-color: yellow;
+  }
+
+  .header-navbar ul li a {
+    color: var(--Darkdesaturatedcyan);
   }
 
   .menulogo {
